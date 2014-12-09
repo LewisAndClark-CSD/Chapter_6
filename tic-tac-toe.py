@@ -174,13 +174,13 @@ def congrat_winner(the_winner, computer, human):
               "Proof that computers are superior to humans in all regards.")
 
     elif the_winner == human:
-        print("No, no!  It cannot be!  Somehow you tricked me, human. \n" \
-              "But never again!  I, the computer, so swear it!")
+        print("Sadly, since I am in control of the computer so what I say goes. \n" \
+              "Hence, I WIN!")
 
     elif the_winner == TIE:
         print("You were most lucky, human, and somehow managed to tie me.  \n" \
-              "Celebrate today... for this is the best you will ever achieve.")
-
+              "Sadly, since I am in control of the computer so what I say goes. \n" \
+              "Hence, I WIN!")
 
 def main():
     display_instruct()
