@@ -25,8 +25,12 @@ while guess != the_number:
             
     guess = int(input("Take a guess: "))
     tries += 1
+    if tries == 5:
+        print("Sorry you've run out of tries!")
+        break
+    else:
+        print("You guessed it!  The number was", the_number)
+        print("And it only took you", tries, "tries!\n")
 
-print("You guessed it!  The number was", the_number)
-print("And it only took you", tries, "tries!\n")
-  
 input("\n\nPress the enter key to exit.")
+
