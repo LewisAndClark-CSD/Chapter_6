@@ -15,6 +15,12 @@ print("Try to guess it in as few attempts as possible.\n")
 the_number = random.randint(1, 100)
 guess = int(input("Take a guess: "))
 tries = 1
+def ask_number(question, low, high, step=1):
+    """Ask for a number within a range."""
+    response=None
+    while response not in range(low, high, step):
+        response=int(input(question))
+    return response
 
 # guessing loop
 while guess != the_number:
