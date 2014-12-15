@@ -125,7 +125,7 @@ def computer_move(board, computer, human):
     # make a copy to work with since function will be changing list
     board = board[:]
     # the best positions to have, in order
-    BEST_MOVES = (5, 0, 8, 6, 2, 1, 3, 7, 5)
+    BEST_MOVES = (4, 0, 2, 6, 8, 1, 3, 5, 7)
 
     print("I shall take square number", end=" ")
     
@@ -174,8 +174,8 @@ def congrat_winner(the_winner, computer, human):
               "Proof that computers are superior to humans in all regards.")
 
     elif the_winner == human:
-        print("No, no!  It cannot be!  Somehow you tricked me, human. \n" \
-              "But never again!  I, the computer, so swear it!")
+        print("As I predicted, human, I am triumphant once more.  \n" \
+              "Proof that computers are superior to humans in all regards.")
 
     elif the_winner == TIE:
         print("You were most lucky, human, and somehow managed to tie me.  \n" \
